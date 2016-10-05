@@ -12,11 +12,6 @@ namespace Phoneword
 	public class MainActivity : Activity
 	{
 
-			// Add code to translate number
-			private string translatedNumber = string.Empty;
-
-
-
 		protected override void OnCreate(Bundle savedInstanceState)
 		{
 			base.OnCreate(savedInstanceState);
@@ -30,6 +25,9 @@ namespace Phoneword
 
 			// Disable the "Call" button
 			callButton.Enabled = false;
+
+			// Add code to translate number
+			string translatedNumber = string.Empty;
 
 			translateButton.Click += (object sender, EventArgs e) =>
 			{
